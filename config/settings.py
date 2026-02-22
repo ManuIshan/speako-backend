@@ -15,8 +15,9 @@ DEBUG = False  # IMPORTANT for production
 
 ALLOWED_HOSTS = [
     "speako-backend-rgj1.onrender.com",
+    "localhost",
+    "127.0.0.1",
 ]
-
 # ========================
 # APPLICATIONS
 # ========================
