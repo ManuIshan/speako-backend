@@ -167,5 +167,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "https://699aef79976d580dde7258cc--speakooo.netlify.app",
+    "https://699af240981eb00bdaad74a3--speakooo.netlify.app",
 ]
