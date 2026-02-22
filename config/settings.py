@@ -138,6 +138,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 AUTH_USER_MODEL = 'accounts.User'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -155,7 +156,9 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,
     'UPDATE_LAST_LOGIN': True,
 }
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.netlify.app",
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
@@ -168,4 +171,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^https://.*--speakooo\.netlify\.app$",
+]
+CORS_ALLOW_HEADERS = [
+    "authorization",
+    "content-type",
 ]
