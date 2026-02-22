@@ -133,11 +133,13 @@ SIMPLE_JWT = {
 # CORS (FIXED FOR NETLIFY)
 # ========================
 
-CORS_ALLOW_ALL_ORIGINS = True  # Temporary safe mode for debugging
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+]
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.netlify.app",
+    "https://*.vercel.app",
 ]
 
 # ========================
