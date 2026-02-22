@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-fzn!fp5q=joby+zb20kb1^+8puxjdp49r6%%^3!_a5lr*eotvj
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['speako-backend-rgj1.onrender.com']
 
 # Application definition
 
