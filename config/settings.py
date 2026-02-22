@@ -166,6 +166,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOWED_ORIGINS = [
-    "https://699af240981eb00bdaad74a3--speakooo.netlify.app",
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*--speakooo\.netlify\.app$",
 ]
